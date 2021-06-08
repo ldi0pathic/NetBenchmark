@@ -2,6 +2,7 @@
 using BenchmarkDotNet.Running;
 using NetBenchmark.Benchmarks.DateTime;
 using NetBenchmark.Benchmarks.Switch;
+using NetBenchmark.Erklärbär._1_Switches;
 
 namespace NetBenchmark
 {
@@ -13,7 +14,8 @@ namespace NetBenchmark
             //BenchmarkRunner.Run<DateTimeTrimHourBenchmark>();
             //BenchmarkRunner.Run<DateTimeTrimMinuteBenchmark>();
             //BenchmarkRunner.Run<DateTimeTrimSecondBenchmark>();
-            BenchmarkRunner.Run<SwitchBenchmark>();
+            //BenchmarkRunner.Run<SwitchBenchmark>();
+            BenchmarkRunner.Run<Erklärbär_1_Switches>();
         }
     }
 }
