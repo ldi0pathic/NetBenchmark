@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBenchmark", "NetBenchmark.csproj", "{CEF26775-ECD7-4E52-82B7-62E02948AE7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBenchmakTests", "..\NetBenchmakTests\NetBenchmakTests.csproj", "{91E7FB3D-3304-4510-ABAF-EFF32BB6E771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEF26775-ECD7-4E52-82B7-62E02948AE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF26775-ECD7-4E52-82B7-62E02948AE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF26775-ECD7-4E52-82B7-62E02948AE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF26775-ECD7-4E52-82B7-62E02948AE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E7FB3D-3304-4510-ABAF-EFF32BB6E771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E7FB3D-3304-4510-ABAF-EFF32BB6E771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E7FB3D-3304-4510-ABAF-EFF32BB6E771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E7FB3D-3304-4510-ABAF-EFF32BB6E771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5B63EB2-0226-4153-90A0-C20A4EF67592}
+	EndGlobalSection
+EndGlobal
