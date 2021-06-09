@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NetBenchmark.Erklärbär._1_Switches
+﻿namespace NetBenchmark.Benchmarks.SwitchVersions
 {
     public enum Dinge
     {

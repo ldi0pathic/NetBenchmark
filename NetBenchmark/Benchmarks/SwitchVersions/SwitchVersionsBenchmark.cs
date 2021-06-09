@@ -2,16 +2,16 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Mathematics;
 using BenchmarkDotNet.Order;
-using NetBenchmark.Erklärbär._1_Switches.Methoden;
+using NetBenchmark.Benchmarks.SwitchVersions.Methodes;
 using System;
 
-namespace NetBenchmark.Erklärbär._1_Switches
+namespace NetBenchmark.Benchmarks.SwitchVersions
 {
     [MemoryDiagnoser]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn(NumeralSystem.Arabic)]
     [HtmlExporter]
-    public class Erklärbär_1_Switches
+    public class SwitchVersionsBenchmark
     {
 
         private readonly IHasColor ifElse = new IfElse();
@@ -24,7 +24,7 @@ namespace NetBenchmark.Erklärbär._1_Switches
         public bool TestIfElse()
         {
             bool r = false;
-            for(int index = 0; index < 100; index++)
+            for (int index = 0; index < 100; index++)
                 foreach (Farben farbe in Enum.GetValues(typeof(Farben)))
                     foreach (Dinge ding in Enum.GetValues(typeof(Dinge)))
                         r = ifElse.HasColor(ding, farbe);
@@ -54,8 +54,8 @@ namespace NetBenchmark.Erklärbär._1_Switches
                         r = newSwitch.HasColor(ding, farbe);
 
             return r;
-        }  
-        
+        }
+
         [Benchmark(Description = "newSwitch2")]
         public bool TestNewSwitch2()
         {
@@ -66,8 +66,8 @@ namespace NetBenchmark.Erklärbär._1_Switches
                         r = newSwitch2.HasColor(ding, farbe);
 
             return r;
-        } 
-        
+        }
+
         [Benchmark(Description = "newSwitch3")]
         public bool TestNewSwitch3()
         {

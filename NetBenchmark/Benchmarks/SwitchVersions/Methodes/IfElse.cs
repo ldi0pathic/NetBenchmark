@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace NetBenchmark.Erklärbär._1_Switches.Methoden
+namespace NetBenchmark.Benchmarks.SwitchVersions.Methodes
 {
     public class IfElse : IHasColor
     {
         public bool HasColor(Dinge ding, Farben farbe)
         {
-            if(ding == Dinge.Apfel)
+            if (ding == Dinge.Apfel)
             {
                 if (farbe == Farben.Rot ||
                     farbe == Farben.Grün ||
@@ -14,7 +14,7 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
                 {
                     return true;
                 }
-                else if(farbe == Farben.Blau ||
+                else if (farbe == Farben.Blau ||
                         farbe == Farben.Lila ||
                         farbe == Farben.Schwarz ||
                         farbe == Farben.Pink)
@@ -23,14 +23,14 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
                 }
                 throw new ArgumentOutOfRangeException($"Farbe [{farbe}] wird derzeit nicht unterstützt (┬┬﹏┬┬)");
             }
-            else if(ding == Dinge.Banane)
+            else if (ding == Dinge.Banane)
             {
                 if (farbe == Farben.Grün ||
                     farbe == Farben.Gelb)
                 {
                     return true;
                 }
-                else if (farbe == Farben.Rot || 
+                else if (farbe == Farben.Rot ||
                          farbe == Farben.Blau ||
                          farbe == Farben.Lila ||
                          farbe == Farben.Schwarz ||
@@ -40,7 +40,7 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
                 }
                 throw new ArgumentOutOfRangeException($"Farbe [{farbe}] wird derzeit nicht unterstützt (┬┬﹏┬┬)");
             }
-            else if(ding == Dinge.Auto)
+            else if (ding == Dinge.Auto)
             {
                 if (farbe == Farben.Rot ||
                     farbe == Farben.Grün ||
@@ -54,7 +54,7 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
                 }
                 throw new ArgumentOutOfRangeException($"Farbe [{farbe}] wird derzeit nicht unterstützt (┬┬﹏┬┬)");
             }
-            else if(ding == Dinge.Sonne)
+            else if (ding == Dinge.Sonne)
             {
                 if (farbe == Farben.Gelb)
                 {
@@ -71,7 +71,7 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
                 }
                 throw new ArgumentOutOfRangeException($"Farbe [{farbe}] wird derzeit nicht unterstützt (┬┬﹏┬┬)");
             }
-            else if(ding == Dinge.Himmel)
+            else if (ding == Dinge.Himmel)
             {
                 if (farbe == Farben.Blau)
                 {
@@ -79,7 +79,7 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
                 }
                 else if (farbe == Farben.Rot ||
                          farbe == Farben.Grün ||
-                         farbe == Farben.Gelb||
+                         farbe == Farben.Gelb ||
                          farbe == Farben.Lila ||
                          farbe == Farben.Schwarz ||
                          farbe == Farben.Pink)

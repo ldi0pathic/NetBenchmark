@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NetBenchmark.Erklärbär._1_Switches.Methoden
+namespace NetBenchmark.Benchmarks.SwitchVersions.Methodes
 {
     public class NewSwitch : IHasColor
     {
@@ -131,67 +129,67 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
     {
         public bool HasColor(Dinge ding, Farben farbe) => ding switch
         {
-            Dinge.Apfel when 
-                farbe == Farben.Rot || 
-                farbe == Farben.Grün || 
+            Dinge.Apfel when
+                farbe == Farben.Rot ||
+                farbe == Farben.Grün ||
                 farbe == Farben.Gelb => true,
 
-            Dinge.Apfel when 
+            Dinge.Apfel when
                 farbe == Farben.Blau ||
-                farbe == Farben.Lila || 
-                farbe == Farben.Schwarz|| 
+                farbe == Farben.Lila ||
+                farbe == Farben.Schwarz ||
                 farbe == Farben.Pink => false,
 
             Dinge.Apfel => throw new NotSupportedException($"Farbe [{farbe}] für Ding [{ding}]  wird derzeit nicht unterstützt (┬┬﹏┬┬)"),
 
-            Dinge.Banane when 
+            Dinge.Banane when
                 farbe == Farben.Gelb ||
                 farbe == Farben.Grün => true,
 
-            Dinge.Banane when 
-                farbe == Farben.Rot || 
-                farbe == Farben.Blau || 
+            Dinge.Banane when
+                farbe == Farben.Rot ||
+                farbe == Farben.Blau ||
                 farbe == Farben.Lila ||
-                farbe == Farben.Schwarz || 
+                farbe == Farben.Schwarz ||
                 farbe == Farben.Pink => false,
 
             Dinge.Banane => throw new NotSupportedException($"Farbe [{farbe}] für Ding [{ding}]  wird derzeit nicht unterstützt (┬┬﹏┬┬)"),
 
-            Dinge.Auto when 
+            Dinge.Auto when
                 farbe == Farben.Rot ||
                 farbe == Farben.Blau ||
-                farbe == Farben.Lila || 
-                farbe == Farben.Schwarz || 
+                farbe == Farben.Lila ||
+                farbe == Farben.Schwarz ||
                 farbe == Farben.Pink ||
-                farbe == Farben.Gelb || 
+                farbe == Farben.Gelb ||
                 farbe == Farben.Grün => true,
 
             Dinge.Auto => throw new NotSupportedException($"Farbe [{farbe}] für Ding [{ding}]  wird derzeit nicht unterstützt (┬┬﹏┬┬)"),
-           
-            Dinge.Sonne when 
+
+            Dinge.Sonne when
                 farbe == Farben.Gelb => true,
 
-            Dinge.Sonne when 
-                farbe == Farben.Rot || 
-                farbe == Farben.Blau || 
-                farbe == Farben.Lila || 
+            Dinge.Sonne when
+                farbe == Farben.Rot ||
+                farbe == Farben.Blau ||
+                farbe == Farben.Lila ||
                 farbe == Farben.Schwarz ||
-                farbe == Farben.Pink ||  
+                farbe == Farben.Pink ||
                 farbe == Farben.Grün => false,
 
             Dinge.Sonne => throw new NotSupportedException($"Farbe [{farbe}] für Ding [{ding}]  wird derzeit nicht unterstützt (┬┬﹏┬┬)"),
-            
-            Dinge.Himmel when 
+
+            Dinge.Himmel when
                 farbe == Farben.Blau => true,
 
-            Dinge.Himmel when 
-                farbe == Farben.Rot || 
-                farbe == Farben.Gelb || 
-                farbe == Farben.Lila || 
-                farbe == Farben.Schwarz || 
+            Dinge.Himmel when
+                farbe == Farben.Rot ||
+                farbe == Farben.Gelb ||
+                farbe == Farben.Lila ||
+                farbe == Farben.Schwarz ||
                 farbe == Farben.Pink ||
-                farbe == Farben.Grün => false,  
-            
+                farbe == Farben.Grün => false,
+
             Dinge.Himmel => throw new NotSupportedException($"Farbe [{farbe}] für Ding [{ding}]  wird derzeit nicht unterstützt (┬┬﹏┬┬)"),
 
             _ => throw new NotSupportedException($"Ding [{ding}] wird derzeit nicht unterstützt (┬┬﹏┬┬)")

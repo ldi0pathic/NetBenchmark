@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NetBenchmark.Erklärbär._1_Switches.Methoden
+namespace NetBenchmark.Benchmarks.SwitchVersions.Methodes
 {
     public class OldSwitch : IHasColor
     {
@@ -15,17 +15,17 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
                         case Farben.Grün:
                         case Farben.Gelb:
                             return true;
-                           
-                        case Farben.Blau:  
-                        case Farben.Lila:      
-                        case Farben.Schwarz:     
+
+                        case Farben.Blau:
+                        case Farben.Lila:
+                        case Farben.Schwarz:
                         case Farben.Pink:
                             return false;
 
                         default:
                             throw new ArgumentOutOfRangeException($"Farbe [{farbe}] für Ding [{ding}] wird derzeit nicht unterstützt (┬┬﹏┬┬)");
                     }
-                   
+
                 case Dinge.Banane:
                     switch (farbe)
                     {
@@ -62,7 +62,7 @@ namespace NetBenchmark.Erklärbär._1_Switches.Methoden
 
                 case Dinge.Sonne:
                     switch (farbe)
-                    {     
+                    {
                         case Farben.Gelb:
                             return true;
 
