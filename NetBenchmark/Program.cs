@@ -1,5 +1,6 @@
 ﻿
 using BenchmarkDotNet.Running;
+using NetBenchmark.Benchmarks.Dictionarys;
 using NetBenchmark.Benchmarks.SwitchVersions;
 
 namespace NetBenchmark
@@ -13,7 +14,8 @@ namespace NetBenchmark
             //BenchmarkRunner.Run<DateTimeTrimMinuteBenchmark>();
             //BenchmarkRunner.Run<DateTimeTrimSecondBenchmark>();
             //BenchmarkRunner.Run<SwitchBenchmark>();
-            BenchmarkRunner.Run<SwitchVersionsBenchmark>();
+            //BenchmarkRunner.Run<SwitchVersionsBenchmark>();
+            BenchmarkRunner.Run<DirctionaryRemoveBenchmark>();
         }
     }
 }
